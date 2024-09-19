@@ -1,0 +1,5 @@
+
+export const createJobPosting = (data) => api.post('/jobs', data);
+export const getJobPostings = () => api.get('/jobs');
+export const updateJobPosting = (id, data) => api.put(`/jobs/${id}`, data);
+export const deleteJobPosting = (id) => api.delete(`/jobs/${id}`);
